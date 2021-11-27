@@ -1,0 +1,3 @@
+main: garbi.plugin.dbmanager.PluginDBmanager
+name: Plugin-DBmanager
+version: unspecified
