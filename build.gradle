@@ -14,13 +14,13 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.3.72'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.2'
     id 'kr.entree.spigradle' version '1.2.4'
     id 'java-library'
     id 'maven-publish'
 }
 
-group 'bld.plugin.manager'
+group 'garbi.plugin.dbmanager'
 
 
 repositories {
@@ -45,7 +45,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'bld.plugin.manager.BLDPluginsManager'
+        attributes 'Main-Class': 'garbi.plugin.dbmanager.PluginDBmanager'
     }
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
